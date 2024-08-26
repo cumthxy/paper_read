@@ -133,6 +133,7 @@ def weekly_paper(output_path=''):
             print(f'开始处理日期: {day}')
             url = base_url + '/papers?date=' + day
             article_list = home_parse(url)
+            print(url)
             print(f'{day} 主页解析完毕')
             for item in article_list:
                 print(f'解析文章{item["title"]}开始')
