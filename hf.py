@@ -145,6 +145,7 @@ def weekly_paper(output_path=''):
         for each in en_articles_content:
             en_article = each['en_content']
             en_title = each['en_title']
+            print(en_title)
             zh_article = extract_yy_text(chat(en_article))
             result =  f"""
 ## {en_title}
