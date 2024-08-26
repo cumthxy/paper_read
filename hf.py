@@ -165,9 +165,9 @@ if __name__ =="__main__":
         if item.endswith('.md'):     
             shutil.move(item, paper_dir)
     weekly_paper()
-    cmd1 = "git add."
+    cmd1 = "git add ."
     cmd2 = "git commit -m update"
     cmd3 = "git push"
-    subprocess.getoutput("cmd1")
-    subprocess.getoutput("cmd2")
-    subprocess.getoutput("cmd3")
+    subprocess.getoutput(cmd1)
+    subprocess.getoutput(cmd2)
+    subprocess.getoutput(cmd3)
